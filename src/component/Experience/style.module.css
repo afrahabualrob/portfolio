@@ -1,0 +1,11 @@
+.wrapper {
+  background: #efe1bd;
+  padding: 50px 0;
+}
+
+.name {
+  color: #a16653;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 14px !important ;
+}

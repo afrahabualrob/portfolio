@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 50px 0;
+  background-color: #a27565;
+}
+
+.skillCard {
+  transition: transform 0.5s ease-in-out !important; /* Animation */
+}
+.skillCard:hover {
+  transform: scale(1.1);
+  background: #efe1bd !important;
+  border: #202020 1px dashed !important;
+}

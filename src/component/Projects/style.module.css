@@ -1,0 +1,48 @@
+.projectSection {
+  padding: 40px 0;
+}
+
+.projectCardWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #efe1bd;
+  opacity: 0.3;
+  transition: height 0.3s ease-out, color 0.3s ease-out;
+}
+
+.projectCard {
+  position: relative;
+}
+
+.projectCard:hover .projectCardWrapper {
+  height: 100%;
+  color: #fff;
+}
+
+.projectTitle {
+  text-align: center;
+  color: #a16653;
+  text-transform: capitalize;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.projectDescription {
+  color: #202020;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.projectLink {
+  text-decoration: none;
+}
+
+.fab:hover {
+  color: #fff;
+  background: #a16653 !important;
+}

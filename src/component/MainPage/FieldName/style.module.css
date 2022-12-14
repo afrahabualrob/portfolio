@@ -1,0 +1,30 @@
+.title {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.text1 {
+  font-size: 35px;
+  font-family: serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text2 {
+  font-size: 30px;
+  font-family: serif;
+  color: #fff;
+}
+
+.text3 {
+  font-size: 22px;
+  color: #8b6557;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.text4 {
+  font-size: 40px;
+  color: #8b6557;
+}
+
