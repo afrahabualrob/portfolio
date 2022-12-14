@@ -31,7 +31,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="skills">
       <Container>
         <WhiteTitle text="skills" />
         <Grid

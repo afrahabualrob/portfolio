@@ -10,7 +10,7 @@ const Footer = () => {
   const WhiteTitle = styledHeading(Heading, "whiteTitle");
 
   return (
-    <div className={styles.wrapper}>
+    <footer className={styles.wrapper} id="Contact">
       <Container>
         <Grid container justifyContent="center">
           <Grid item>
@@ -42,7 +42,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </footer>
   );
 };
 

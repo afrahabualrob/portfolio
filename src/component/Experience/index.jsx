@@ -15,14 +15,14 @@ const Experience = () => {
   const DarkTitle = styledHeading(Heading, "dark");
 
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper} id="Experience">
       <Container maxWidth="md">
         <DarkTitle text="experience" />
 
-        <Timeline position="alternate" sx={{mt:5}}>
+        <Timeline position="alternate" sx={{ mt: 5 }}>
           <TimelineItem>
             <TimelineOppositeContent
-              sx={{ m: "auto 0"}}
+              sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
               color="text.secondary"
@@ -147,7 +147,7 @@ const Experience = () => {
           </TimelineItem>
         </Timeline>
       </Container>
-    </div>
+    </section>
   );
 };
 

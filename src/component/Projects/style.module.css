@@ -46,3 +46,8 @@
   color: #fff;
   background: #a16653 !important;
 }
+@media only screen and (min-width: 900px) {
+  .projectCard {
+    min-height: 312px;
+  }
+}

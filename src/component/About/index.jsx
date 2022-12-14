@@ -8,7 +8,7 @@ import styledHeading from "../HOC/styledHeading";
 const About = () => {
   const DarkTitle = styledHeading(Heading, "dark");
   return (
-    <Paper elevation={0} sx={{ py: 5 }}>
+    <Paper elevation={0} sx={{ py: 5 }} id="About">
       <Container maxWidth="lg">
         <DarkTitle text="about  me" />
 

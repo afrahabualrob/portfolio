@@ -84,7 +84,7 @@ const Projects = () => {
   ];
 
   return (
-    <Container maxWidth="md" className={styles.projectSection}>
+    <Container maxWidth="md" className={styles.projectSection} id="projects">
       <DarkTitle text="recent projects" />
       <Grid container justifyContent="space-between" spacing={5} rowSpacing={4}>
         {projects.map((project, index) => {

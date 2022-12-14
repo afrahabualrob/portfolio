@@ -13,9 +13,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Logo from "./Logo";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-scroll";
 
 const drawerWidth = "100%";
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Home", "About","skills","Experience","projects", "Contact"];
 
 export default function DrawerAppBar(props) {
   const { window } = props;
@@ -31,10 +32,21 @@ export default function DrawerAppBar(props) {
         <CloseIcon />
       </IconButton>
       <List>
-        {navItems.map((item) => (
+        {navItems.map((item,index) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText>
+                <Link
+                  key={index}
+                  activeClassName="active"
+                  to={item}
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                >
+                  {item}
+                </Link>
+              </ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
@@ -60,22 +72,31 @@ export default function DrawerAppBar(props) {
                 aria-label="open drawer"
                 edge="end"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: "none" } }}
+                sx={{ mr: 2, display: { lg: "none" } }}
               >
                 <MenuIcon />
               </IconButton>
-            </Grid>{" "}
+            </Grid>
           </Grid>
           <Box
             sx={{
-              display: { xs: "none", sm: "block" },
-              width: "70vw",
+              display: { xs: "none", lg: "block" },
+              width: "75vw",
               px: 2,
             }}
           >
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <Button key={item} sx={{ color: "#fff" }}>
-                {item}
+                <Link
+                  key={index}
+                  activeClassName="active"
+                  to={item}
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                >
+                  {item}
+                </Link>
               </Button>
             ))}
           </Box>
