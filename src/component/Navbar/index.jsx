@@ -16,7 +16,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-scroll";
 
 const drawerWidth = "100%";
-const navItems = ["Home", "About","skills","Experience","projects", "Contact"];
+const navItems = [
+  "Home",
+  "About",
+  "skills",
+  "Experience",
+  "projects",
+  "Contact",
+];
 
 export default function DrawerAppBar(props) {
   const { window } = props;
@@ -32,26 +39,27 @@ export default function DrawerAppBar(props) {
         <CloseIcon />
       </IconButton>
       <List>
-        {navItems.map((item,index) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link
-                  key={index}
-                  activeClassName="active"
-                  to={item}
-                  spy={true}
-                  smooth={true}
-                  duration={1000}
-                >
-                  {item}
-                </Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
+        {navItems.map((item, index) => (
+          <>
+            <Divider light={true}  />
+            <ListItem key={item} disablePadding>
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText sx={{ color: "#a27565" }}>
+                  <Link
+                    key={index}
+                    to={item}
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    {item}
+                  </Link>
+                </ListItemText>
+              </ListItemButton>
+            </ListItem>
+          </>
         ))}
       </List>
-      <Divider />
     </Box>
   );
 
@@ -86,14 +94,22 @@ export default function DrawerAppBar(props) {
             }}
           >
             {navItems.map((item, index) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+              <Button
+                key={item}
+                sx={{
+                  color: "#fff",
+                  fontSize: "15px",
+                  fontFamily: " sans-serif",
+                  textTransform:"capitalize"
+                }}
+              >
                 <Link
                   key={index}
-                  activeClassName="active"
                   to={item}
                   spy={true}
                   smooth={true}
                   duration={1000}
+                  xs={{}}
                 >
                   {item}
                 </Link>
@@ -112,11 +128,11 @@ export default function DrawerAppBar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", lg: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              height: "200px",
+              height: "400px",
             },
           }}
         >

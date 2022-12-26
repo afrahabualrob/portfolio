@@ -1,22 +1,17 @@
 import React from "react";
 import TextAnimation from "react-animate-text";
 import { FaHeart } from "react-icons/fa";
-import styles from "./style.module.css";
+import useStyles from "./styles";
 
 const FieldName = () => {
-  const TextShow = () => {
-    setTimeout(() => {
-      (<p>Afrah</p>);
-    }, 2000);
-  };
+  const classes = useStyles();
+
   return (
-    <div className={styles.title}>
-      {TextShow()}
+    <div className={classes.title}>
       <TextAnimation>
-        <h1 className={styles.text1}>HI I am !</h1>
-        <h2 className={styles.text2}> Afrah Abualrob</h2>
-        <p className={styles.text3}>Frontend Developer</p>
-        {/* <h1 className={styles.text4}>{String("<   />")}</h1> */}
+        <h1 className={classes.text1}>HI I am !</h1>
+        <h2 className={classes.text2}> Afrah Abualrob</h2>
+        <p className={classes.text3}>Frontend Developer</p>
         <TextAnimation animation="backspace">
           <FaHeart />
         </TextAnimation>

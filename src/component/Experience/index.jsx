@@ -7,15 +7,16 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { Card, Grid, Container,Typography } from "@mui/material";
-import styles from "./style.module.css";
 import Heading from "../HOC/Heading";
 import styledHeading from "../HOC/styledHeading";
+import useStyles from "./styles";
 
 const Experience = () => {
   const DarkTitle = styledHeading(Heading, "dark");
+  const classes = useStyles();
 
   return (
-    <section className={styles.wrapper} id="Experience">
+    <section className={classes.wrapper} id="Experience">
       <Container maxWidth="md">
         <DarkTitle text="experience" />
 
@@ -49,7 +50,7 @@ const Experience = () => {
                   variant="h6"
                   display="block"
                   gutterBottom
-                  className={styles.name}
+                  className={classes.name}
                 >
                   Gaza Sky Geeks
                 </Typography>
@@ -89,7 +90,7 @@ const Experience = () => {
                       variant="h6"
                       display="block"
                       gutterBottom
-                      className={styles.name}
+                      className={classes.name}
                     >
                       Foothill Technology solution
                     </Typography>
@@ -133,7 +134,7 @@ const Experience = () => {
                   variant="h6"
                   display="block"
                   gutterBottom
-                  className={styles.name}
+                  className={classes.name}
                 >
                   knowledge academy
                 </Typography>

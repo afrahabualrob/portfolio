@@ -20,7 +20,7 @@ const Projects = () => {
       id: 0,
       title: "TodoApp Project",
       description:
-        "This is my first react project ,Through this application, can added an tasks, delete, search and indicated it as completed",
+        "This is my first react project, can added an tasks, delete, search and indicated it as completed",
       link: "https://github.com/afrahabualrob/AfrahRepo/tree/final-project",
       details: [
         {
@@ -44,7 +44,7 @@ const Projects = () => {
       id: 1,
       title: "e-commerce Project",
       description:
-        "E-commerce React Project full functionlity and fully responsive",
+        "E-commerce React Project full functionlity and fully responsive & Some components have MUI.",
       link: "https://github.com/afrahabualrob/AfrahRepo/tree/final-project",
 
       details: [
@@ -74,19 +74,19 @@ const Projects = () => {
       id: 2,
       title: "portfolio Project",
       description:
-        "portfolio Project ia a react project using react concepts plus JSS",
-      link: "https://github.com/afrahabualrob/AfrahRepo/tree/final-project",
+        "portfolio Project & this is about me using react concepts plus JSS and MUI.",
+      link: "https://github.com/afrahabualrob/portfolio/tree/master",
       details: [
-        { Description: ["Skills", "Experiences","Recant projects"] },
+        { Description: ["Skills", "Experiences", "Recant projects"] },
         { Technology: ["JSS", "restful API", "Material UI"] },
       ],
     },
   ];
 
   return (
-    <Container maxWidth="md" className={styles.projectSection} id="projects">
+    <Container maxWidth="md" className={styles.projectSection} id="projects" >
       <DarkTitle text="recent projects" />
-      <Grid container justifyContent="space-between" spacing={5} rowSpacing={4}>
+      <Grid container justifyContent="space-between" spacing={5} rowSpacing={4} sx={{pt:3}}>
         {projects.map((project, index) => {
           const { id, title, description, link, details } = project;
 

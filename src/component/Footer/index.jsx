@@ -2,15 +2,16 @@ import React from "react";
 import { Container, Grid, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DraftsIcon from "@mui/icons-material/Drafts";
-import styles from "./style.module.css";
+import useStyles from "./styles";
 import Heading from "../HOC/Heading";
 import styledHeading from "../HOC/styledHeading";
 
 const Footer = () => {
   const WhiteTitle = styledHeading(Heading, "whiteTitle");
+  const classes = useStyles();
 
   return (
-    <footer className={styles.wrapper} id="Contact">
+    <footer className={classes.wrapper} id="Contact">
       <Container>
         <Grid container justifyContent="center">
           <Grid item>
@@ -21,7 +22,7 @@ const Footer = () => {
                   <IconButton
                     aria-label="Example"
                     sx={{ background: "#a16653 " }}
-                    className={styles.icon}
+                    className={classes.icon}
                   >
                     <GitHubIcon />
                   </IconButton>
@@ -32,7 +33,7 @@ const Footer = () => {
                   <IconButton
                     aria-label="Example"
                     sx={{ background: "#a16653 " }}
-                    className={styles.icon}
+                    className={classes.icon}
                   >
                     <DraftsIcon />
                   </IconButton>
